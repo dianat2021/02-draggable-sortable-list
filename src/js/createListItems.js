@@ -1,3 +1,4 @@
+import handleDragAndDrop from "./dragAndDrop.js";
 import shuffleArray from "./shuffleArray.js";
 import stepsForSoftwareProject from "./stepsData.js";
 
@@ -12,6 +13,8 @@ const createListItems = () => {
     listItem.setAttribute("draggable", true);
     listItem.setAttribute("data-index", index);
   });
+
+  handleDragAndDrop();
 };
 
 export default createListItems;

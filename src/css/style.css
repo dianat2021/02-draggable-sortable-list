@@ -42,3 +42,7 @@ main {
   cursor: grab;
   font-weight: bold;
 }
+
+.list__item--dragged {
+  background-color: pink;
+}
