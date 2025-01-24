@@ -26,8 +26,10 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-large);
 }
 .list {
   width: 40%;
@@ -45,4 +47,15 @@ main {
 
 .list__item--dragged {
   background-color: pink;
+}
+.list__compare-button {
+  min-width: 160px;
+  min-height: 32px;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+.incorrect {
+  background-color: orangered;
 }
