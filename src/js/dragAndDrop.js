@@ -3,6 +3,8 @@
 //   const listItems = document.querySelectorAll(".list__item");
 //   const list = document.querySelector(".list");
 
+import updateIndices from "./updateIndices";
+
 //   // Declare a variable to track the index of the dragged element
 //   let draggedItemIndex = null;
 
@@ -96,6 +98,7 @@ const handleDragAndDrop = () => {
     if (draggedItem) {
       draggedItem = null;
       e.target.classList.remove("list__item--dragged");
+      updateIndices();
     }
   });
 
